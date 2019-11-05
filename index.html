@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fresh food</title>
+	<link rel="stylesheet" type="text/css" href="freshfood.css">
+	
+</head>
+<body >
+	<div class="grid-container">
+		<div class="header">
+			<ul>
+				<li>
+					Phone: <span style="color: blue;">0359405417</span>
+				</li>
+				<li>
+					Email: nguyetnguyen@gmail.com
+				</li>
+			</ul>
+		</div>
+		<div class="top">
+			<img class="logo" src="image/logo.png">
+			<div>
+				<input id="sea" class="form" type="" name="" placeholder="search">
+				<button onclick="search()">Tìm kiếm</button>
+			</div>
+			<button onclick="displayCart()">Giỏ hàng</button>
+		</div>
+		<div class="bar">
+			<ul style="margin-left: 350px;"> 
+				<li onclick="displayProduct()"><a href="">Trang chủ</a></li>
+				<li onclick="displayProduct()"><a href="">Thực phẩm</a></li>
+				<li><a href="#">Giới thiệu</a></li>
+				<li onclick="contact()"><a href="#">Liên hệ</a></li>
+				<li><a href="#">Tin tức</a></li>
+			</ul>
+		</div>
+		<div class="menu">
+			<div class="border-menu">
+                <div style="background-color:#80BB35; border-radius: 5px; padding: 10px; color: white;">
+                	<b>
+                        DANH MỤC SẢN PHẨM
+                    </b>
+                </div>
+                <ul style="list-style-type: none;">
+                	<li onclick="list_Vegetable();"class="style-border"><a href="#">RAU, CỦ SẠCH</a></li>
+                    <li onclick="list_Fruits();" class="style-border"><a href="#">HOA QUẢ NHẬP KHẨU</a></li>
+                    <li onclick="list_Foods();" class="style-border"><a href="#">THỰC PHẨM TƯƠI</a></li>
+                    <li onclick="list_Convenience();" style="padding: 9px;"><a href="#">THỰC PHẨM CHẾ BIẾN SẴN</a></li>
+                </ul>
+            </div>
+		</div>
+		<div class="main">
+			<img src="image/main.png">
+		</div>
+		<div class="products">
+			<div id="container"></div>
+			<div id="fruit"></div>
+			<div id="vegetable"></div>
+			<div id="food"></div>
+			<div id="convenience"></div>
+			<div id="containerCart"></div>
+			<div id="sum"></div>
+			<div id="contact"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
